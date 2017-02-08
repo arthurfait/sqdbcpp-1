@@ -269,6 +269,7 @@ bool Statement::Next()
   else
   {
     CHECK(m_db, ret);
+        return false;
   }
 }
 

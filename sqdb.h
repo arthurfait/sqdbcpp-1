@@ -50,7 +50,7 @@ public:
 
   Exception(const SQDB_CHAR* errorMsg);
 
-  ~Exception();
+    ~Exception() throw();
 
   int GetErrorCode() const;
 
@@ -85,11 +85,11 @@ public:
 
   Blob(const Blob& x);
   Blob& operator=(const Blob& x);
+    ~Blob();
 
   int GetSize() const;
   const char* GetData() const;
 
-  ~Blob();
 
 private:
   char* m_data;
@@ -128,6 +128,7 @@ public:
 
   Statement(const Statement& x);
   Statement& operator=(const Statement& x);
+    ~Statement();
 
   bool Next();
   Convertor GetField(int field) const;
