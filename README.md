@@ -1,1 +1,1 @@
-Sqlite C++ API Wrapper inspired and inherited from code.google.com/p/sqdbcpp
+Sqlite C++ API Wrapper inspired and inherited from http://code.google.com/p/sqdbcpp
